@@ -31,6 +31,6 @@ app.get("/music/:music_uri", (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening`);
+app.listen(() => {
+  console.log("Server is running");
 });
