@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const musicList = require("../musics/musicList.json");
 const app = express();
-const port = 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -33,5 +32,5 @@ app.get("/music/:music_uri", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Example app listening`);
 });
